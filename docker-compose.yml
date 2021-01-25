@@ -3,7 +3,7 @@ version: "3.4"
 services:
   sc-cd-test:
     restart: always
-    image: klebindev/jenkins-docker-test
+    image: klebindev/jenkins-docker-test:1
     ports:
       - "7070:7070"
     environment:
