@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  sc-cd-test:
+    restart: always
+    image: klebindev/jenkins-docker-test
+    ports:
+      - "7070:7070"
+    environment:
+      - JAVA_OPTS=-Xmx128m -Xms128m
+
